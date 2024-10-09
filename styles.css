@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    background-color: #f9f9f9;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: white;
+    padding: 10px;
+    border-right: 1px solid #ddd;
+    position: fixed;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    width: 120px;
+}
+
+nav ul, .your-section ul, .subscriptions-section ul {
+    list-style-type: none;
+}
+
+nav ul li, .your-section ul li, .subscriptions-section ul li {
+    margin: 10px 0;
+}
+
+nav ul li a, .your-section ul li a, .subscriptions-section ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a i, .your-section ul li a i, .subscriptions-section ul li a i {
+    margin-right: 15px;
+    font-size: 18px;
+}
+
+nav ul li a:hover, .your-section ul li a:hover, .subscriptions-section ul li a:hover {
+    background-color: #f2f2f2;
+}
+
+hr {
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px solid #ddd;
+}
+
+.your-section, .subscriptions-section {
+    margin-top: 20px;
+}
+
+.your-section p, .subscriptions-section p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.content {
+    margin-left: 270px;
+    padding: 20px;
+    width: 100%;
+}
+
+/* Добавлена верхняя панель с поисковиком */
+.top-bar {
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 250px; /* Отступ для бокового меню */
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: #f1f1f1;
+    padding: 5px 10px;
+    border-radius: 25px;
+    width: 50%;
+}
+
+.search-container input {
+    border: none;
+    background: transparent;
+    outline: none;
+    flex: 1;
+}
+
+.search-container button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 20px;
+}
+
+.video-card {
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.video-card img {
+    width: 100%;
+    height: auto; 
+}
+
+.video-info {
+    padding: 10px;
+}
+
+.video-title h2 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.video-channel span, .video-stats span {
+    font-size: 12px; 
+    color: #666; 
+    margin-right: 5px; 
+}
